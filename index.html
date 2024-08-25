@@ -30,7 +30,7 @@
       }
     </script>
 </head>
-<body>
+<body class="p-2">
     <!-- Header Section Start Here -->
      <header class="container mx-auto">
         <div class="navbar">
@@ -61,11 +61,11 @@
             <div class="btn bg-[#ABEF5F] rounded-full py-2  hidden lg:block">
               <div class="flex space-x-2">
                 <a class="text-xl font-extrabold text-[#1C1C1C]" href="#">Book Consult</a>
-              <a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 bg-[black] text-white rounded-full px-2 py-2">
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 bg-[black] text-white rounded-full px-2 py-2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-              </svg></a>
+                </svg></a>
               </div>
-          </div>
+            </div>
           </div>
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -253,7 +253,77 @@
               </div>
            </section>
         </div>
+        <!-- Form Section -->
+         <section class="bg-[url('/assets/bg.jpg')] bg-no-repeat bg-cover">
+          <div class="container mx-auto">
+            <div class="flex flex-col items-center gap-8 py-20">
+              <!-- Let's Connect area -->
+              <div class="w-60 bg-primary/[0.2] rounded-3xl px-4 py-2 flex items-center gap-2">
+                <i class="fa-solid fa-arrow-right"></i>
+                <h5 class="text-text_color_s text-base font-bold">Let's Connect</h5>
+              </div>
+              <!-- Form Section Title Area -->
+              <div class="text-center space-y-6">
+                <h3 class="text-text_color_p text-4xl font-bold">Let’s Discuss Next Project</h3>
+                <p class="text-text_color_s text-base font-medium">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
+              </div>
+            </div>
+            <!-- form section content Area -->
+           <div class="grid px-1 gap-5 lg:grid-cols-2 lg:px-10 py-6">
+              <input class="rounded-[64px] px-5 py-4 " type="text" placeholder="First Name*">
+              <input class="rounded-[64px] px-5 py-4 " type="text" placeholder="Last Name*">
+              <input class="rounded-[64px] px-5 py-4 " type="text" placeholder="Phone Number*">
+              <input class="rounded-[64px] px-5 py-4 " type="text" placeholder="Email Number*">
+              <textarea class="rounded-[32px] px-5 py-5 h-[240px] col-span-2" name="" id="" placeholder="Write your message here"></textarea>
+           </div>
+            <!-- <div>
+                <div class="btn bg-[#ABEF5F] rounded-full py-2">
+                  <div class="flex space-x-2">
+                    <a class="text-xl font-extrabold text-[#1C1C1C]" href="#">Book Consult</a>
+                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 bg-[black] text-white rounded-full px-2 py-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg></a>
+                  </div>
+            </div>   -->
+           </div>
+          </div>
+         </section>
       </main>
-      
+      <!-- Footer Section -->
+       <Footer class="bg-dark">
+        <div class="container mx-auto py-20">
+          <div class="flex flex-col items-center text-center gap-12 py-25">
+            <!-- footer content heading and description -->
+            <div class="flex flex-col gap-6 items-center">
+              <div class="flex items-center gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 bg-primary text-dark rounded-full px-2 py-2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>
+                <a class="text-3xl text-[#E9E9E9] font-bold">Rinterio</a>
+              </div>
+              <p class="text-base text-[#737373]">The barn house captivates with its blend of rustic charm and modern sophistication,<br class="hidden lg:block"> featuring weathered wood, sleek metal accents.</p>
+            </div>
+            <!-- Menu Area -->
+            <div>
+              <ul class="flex flex-col gap-6 lg:flex-row lg:space-x-20">
+                <li><a class="text-[#737373] font-semibold text-base">Home</a></li>
+                <li><a class="text-[#737373] font-semibold text-base">Services</a></li>
+                <li><a class="text-[#737373] font-semibold text-base">Portfolio</a></li>
+                <li><a class="text-[#737373] font-semibold text-base">Blogs</a></li>
+                <li><a class="text-[#737373] font-semibold text-base">Contact Us</a></li> 
+              </ul>
+            </div>
+            <div>
+              <div class="btn bg-[#ABEF5F] rounded-full py-2 lg:block">
+                <div class="flex space-x-2">
+                  <a class="text-xl font-extrabold text-[#1C1C1C]" href="#">Book Consult</a>
+                  <a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 bg-[black] text-white rounded-full px-2 py-2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                  </svg></a>
+                </div>
+              </div>
+          </div>  
+        </div>
+       </Footer>     
 </body>
 </html>
