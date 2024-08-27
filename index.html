@@ -14,9 +14,6 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Tailwind CSS Configuration -->
-    <!-- <style>
-      font: "Manrope", sans-serif;
-    </style> -->
     <script>
       tailwind.config = {
         theme: {
@@ -25,15 +22,16 @@
               clifford: '#da373d',
               primary: '#ABEF5F',
               dark: '#1C1C1C',
+              light: '#f4f4f4',
               text_color_p: '#212121',
               text_color_S: '#494949',
-            }
+            },
           }
         }
       }
     </script>
 </head>
-<body class="p-2 bg-white font-[manrope]">
+<body class="p-2 bg-white font-[Manrope]">
     <!-- Header Section Start Here -->
      <header class="container mx-auto">
         <div class="navbar">
@@ -98,7 +96,7 @@
      </header>
      <!-- Main Area Start -->
       <main>
-          <section class="bg-[#f4f4f4]">
+          <section class="bg-light">
            <div class="container mx-auto">
             <div class="relative z-10 ml-[-45px] mt-6">
               <img class=" absolute hidden md:block" src="./assets/Vector.png" alt="">
@@ -151,7 +149,7 @@
            </div>
           </section>
           <!-- Our Works Section -->
-           <section class="bg-[#f4f4f4]">
+           <section class="bg-light">
               <div class="container mx-auto">
                 <!-- Text Area -->
               <div class="space-y-8 py-12">
@@ -198,7 +196,7 @@
               </div>
            </section>
            <!--Our Latest Portfolio Section  -->
-           <section class="bg-white px-30 py-25 space-y-4">
+           <section class="bg-light px-30 py-25 space-y-4">
               <div class="container mx-auto">
                 <div class="flex flex-col items-center gap-6 mb-8 pt-6">
                   <!-- Explore Button -->
@@ -263,8 +261,8 @@
                 </div>
               </div>
            </section>
-           <!-- Our Service SEction -->
-        <section class="bg-[#f4f4f4]">
+           <!-- Our Service Section -->
+        <section class="bg-light">
           <div class="container mx-auto">
             <div class="flex flex-col items-center gap-6 mb-8 pt-6">
               <!-- Explore Button -->
@@ -279,24 +277,26 @@
               </div>
             </div>
             <!-- section Accordian Area -->
-            <div class="space-y-4 lg:flex space-x-3 justify-between items-center">
-              <div class="bg-white p-6 rounded-3xl border-2"><img class="rounded-xl w-full" src="./assets/architecture.jpg" alt=""></div>
-              <div class="w-full space-y-6">
-                <div class="collapse collapse-arrow bg-base-200">
+            <div class="space-y-4 lg:flex lg:space-x-6">
+              <div class="bg-white p-6 rounded-3xl border-2">
+                <img class="rounded-xl w-full" src="./assets/architecture.jpg" alt="">
+              </div>
+              <div class="w-full space-y-4 ">
+                <div class="collapse collapse-arrow bg-red-200">
                   <input type="radio" name="my-accordion-2" checked="checked" />
                   <div class="collapse-title text-xl font-medium">Architecture & Building</div>
                   <div class="collapse-content">
                     <p>Architectural wonders await firms offer project Our management services. Along with design architecture firms including design principles, construction techniques, and the evolution of architectural</p>
                   </div>
                 </div>
-                <div class="collapse collapse-arrow bg-base-200">
+                <div class="collapse collapse-arrow bg-red-200">
                   <input type="radio" name="my-accordion-2" />
                   <div class="collapse-title text-xl font-medium">Interior Design</div>
                   <div class="collapse-content">
                     <p>Interior design is a multifaceted field that involves creating functional and aesthetically pleasing interior spaces It combines creativity, technical knowledge, and problem-solving skills to enhance</p>
                   </div>
                 </div>
-                <div class="collapse collapse-arrow bg-base-200">
+                <div class="collapse collapse-arrow bg-red-200">
                   <input type="radio" name="my-accordion-2" />
                   <div class="collapse-title text-xl font-medium">House Renovation</div>
                   <div class="collapse-content">
@@ -308,7 +308,7 @@
           </div>
         </section> 
         <!-- Form Section -->
-         <section class="bg-[url('/assets/bg.jpg')] bg-no-repeat bg-cover mt-6">
+         <section class="bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover mt-6">
           <div class="container mx-auto">
             <div class="flex flex-col items-center gap-8 py-20">
               <!-- Let's Connect area -->
@@ -322,23 +322,30 @@
                 <p class="text-text_color_s text-base font-medium">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
               </div>
             </div>
-            <!-- form section content Area -->
-           <div class="grid px-1 gap-5 lg:grid-cols-2 lg:px-10 py-6">
-              <input class="rounded-[64px] px-5 py-4 " type="text" placeholder="First Name*">
-              <input class="rounded-[64px] px-5 py-4 " type="text" placeholder="Last Name*">
-              <input class="rounded-[64px] px-5 py-4 " type="text" placeholder="Phone Number*">
-              <input class="rounded-[64px] px-5 py-4 " type="text" placeholder="Email Number*">
-              <textarea class="rounded-[32px] px-5 py-5 h-[240px] col-span-2" name="" id="" placeholder="Write your message here"></textarea>
-           </div>
-           <div class="bg-primary rounded-[32px] px-5 py-3 mx-1 lg:mx-10">
-              <div class="flex space-x-2 justify-center">
-                <a class="text-xl font-extrabold text-[#1C1C1C]" href="#">Send Mail</a>
-                <a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 bg-[black] text-white rounded-full px-2 py-2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                </svg></a>
+            <section class="mx-auto grid md:grid-cols-2 grid-cols-1 gap-5">
+              <div>
+                  <input type="text" placeholder="First Name*" class="input input-bordered input-primary w-full" />
               </div>
-           </div>
-           </div>
+              <div>
+                  <input type="text" placeholder="Last Name*" class="input input-bordered input-primary w-full" />
+              </div>
+              <div>
+                <input type="text" placeholder="Phone Number*" class="input input-bordered input-primary w-full" />
+              </div>
+              <div>
+              <input type="text" placeholder="Email Number*" class="input input-bordered input-primary w-full" />
+              </div>
+                <textarea name="" id="" rows="8" placeholder="Write Your Message" class="md:!col-span-2 textarea input-bordered input-primary resize-none p-2 w-full"></textarea>
+                <!-- Button Area -->
+                <div class="bg-primary md:col-span-2 w-full rounded-[32px] px-5 py-3 mx-1">
+                  <div class="flex space-x-2 justify-center">
+                    <a class="text-xl font-extrabold text-[#1C1C1C]" href="#">Send Mail</a>
+                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 bg-[black] text-white rounded-full px-2 py-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg></a>
+                  </div>
+               </div>
+            </section>
           </div>
          </section>
       </main>
@@ -377,6 +384,6 @@
               </div>
           </div>  
         </div>
-       </Footer>     
+       </Footer>   
 </body>
 </html>
